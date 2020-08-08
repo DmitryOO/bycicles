@@ -1,3 +1,8 @@
-h1 {
-  color: red;
-}
+@import "fonts.scss";
+@import "variables.scss";
+@import "general.scss";
+@import "blocks/top-block.scss";
+@import "blocks/page-header.scss";
+@import "blocks/header-menu.scss";
+@import "blocks/buy-form.scss";
+
