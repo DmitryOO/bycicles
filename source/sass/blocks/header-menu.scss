@@ -26,6 +26,47 @@
 
 @media (max-width: $tablet-width) {
   .header-menu {
+    order: 0;
     display: none;
+    background-color: #ffffff;
+    padding: 0;
+    padding-top: 100px;
+  }
+
+  .header-menu--noJS {
+    display: block;
+  }
+
+  .header-menu__item {
+    min-height: 60px;
+    padding-top: 17px;
+    padding-left: 16px;
+    margin-bottom: 30px;
+    background-color: #f6f6f6;
+
+    &:nth-last-child(1) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .header-menu__item a::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    margin-left: auto;
+  }
+
+  .header-menu__item a {
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    color: #48494d;
+    opacity: 1;
   }
 }
