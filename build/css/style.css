@@ -365,7 +365,8 @@ a {
 
 .facts {
   font-family: "Open Sans", "Arial", sans-serif;
-  padding-top: 128px; }
+  padding-top: 128px;
+  padding-bottom: 113px; }
   .facts h2 {
     font-weight: 600;
     font-size: 30px;
@@ -411,7 +412,8 @@ a {
 
 @media (max-width: 1023px) {
   .facts {
-    padding-top: 18px; }
+    padding-top: 18px;
+    padding-bottom: 34px; }
   .facts h2 {
     font-weight: 600;
     font-size: 24px;
@@ -424,6 +426,8 @@ a {
       margin-top: 23px; } }
 
 @media (max-width: 767px) {
+  .facts {
+    padding-bottom: 0; }
   .facts h2 {
     margin-bottom: 37px; }
   .facts__list {
@@ -453,3 +457,185 @@ a {
     margin-bottom: 10px; }
   .facts__item:nth-child(n+2) p {
     margin-bottom: 64px; } }
+
+.type {
+  width: 100%;
+  background-color: #f6f7f9;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  padding-top: 150px; }
+
+.type h2 {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -0.005em;
+  color: #1f1f1f;
+  margin-top: 0;
+  margin-bottom: 46px;
+  margin-left: -10px; }
+
+.type__list {
+  max-width: 1222px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.type__image {
+  width: 342px;
+  height: 503px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden; }
+
+.type__image img {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.type__item {
+  position: relative; }
+
+.type__item p {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px; }
+
+.type__item:nth-child(3n-2) {
+  padding-left: 60px;
+  padding-top: 10px; }
+  .type__item:nth-child(3n-2)::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 50%;
+    border: 27px solid #0ad9c6;
+    top: 166px;
+    left: 0; }
+
+.type__item:nth-child(3n-1) {
+  padding-top: 40px; }
+  .type__item:nth-child(3n-1) .type__image {
+    height: 565px; }
+  .type__item:nth-child(3n-1)::before {
+    content: "";
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    border: 8px solid #0ad9c6;
+    top: 21px;
+    left: -19px;
+    z-index: 100; }
+  .type__item:nth-child(3n-1)::after {
+    content: "";
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    border: 8px solid #0ad9c6;
+    right: -23px;
+    bottom: 55px; }
+
+.type__item:nth-child(3n) {
+  padding-right: 36px; }
+  .type__item:nth-child(3n) .type__image {
+    height: 513px; }
+  .type__item:nth-child(3n)::after {
+    content: "";
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    border: 17px solid #0ad9c6;
+    border-radius: 50%;
+    right: 0;
+    top: -32px; }
+
+.type__image--road img {
+  left: -20px; }
+
+.type__image--mountain img {
+  left: -23px; }
+
+.type__image--child img {
+  left: -214px; }
+
+@media (max-width: 1023px) {
+  .type {
+    padding-top: 57px; }
+  .type h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 0;
+    margin-bottom: 37px; }
+  .type__item p {
+    margin-bottom: 47px; }
+  .type__list {
+    max-width: 690px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .type__item:nth-child(3n-1) .type__image,
+  .type__item:nth-child(3n) .type__image {
+    height: 300px; }
+  .type__image {
+    width: 270px;
+    height: 300px; }
+  .type__item:nth-child(n) {
+    padding: 0; }
+  .type__item:nth-child(2n-1) {
+    margin-right: 50px; }
+  .type__item:nth-last-child(1) {
+    margin-right: 0; }
+  .type__item:nth-child(3n-2)::before {
+    width: 127px;
+    height: 127px;
+    left: -37px;
+    top: 201px;
+    border-width: 18px; }
+  .type__item:nth-child(3n-1)::before,
+  .type__item:nth-child(3n-1)::after {
+    display: none; }
+  .type__item:nth-child(3n)::after {
+    width: 68px;
+    height: 68px;
+    border-width: 13px;
+    right: -25px;
+    top: -19px; }
+  .type__image--road img {
+    width: 101%;
+    height: 356px;
+    left: -3px;
+    top: -30px; }
+  .type__image--mountain img {
+    width: 102%;
+    height: 388px;
+    left: -2px;
+    top: -48px; }
+  .type__image--child img {
+    width: 162%;
+    height: 300px;
+    left: -86px;
+    top: 0; } }
+
+@media (max-width: 767px) {
+  .type__list {
+    max-width: 320px; }
+  .type__item:nth-child(2n-1) {
+    margin-right: 0; }
+  .type__item p {
+    margin-bottom: 40px; }
+  .type__item:nth-child(3n-2)::before {
+    left: -24px;
+    top: 202px; }
+  .type__item:nth-child(3n)::after {
+    right: -15px; } }

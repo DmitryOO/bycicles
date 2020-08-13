@@ -1,6 +1,7 @@
 .facts {
   font-family: $font;
   padding-top: 128px;
+  padding-bottom: 113px;
 
   & h2 {
     font-weight: 600;
@@ -49,6 +50,7 @@
 @media (max-width: $tablet-width) {
   .facts {
     padding-top: 18px;
+    padding-bottom: 34px;
   }
 
   .facts h2 {
@@ -69,6 +71,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .facts {
+    padding-bottom: 0;
+  }
+
   .facts h2 {
     margin-bottom: 37px;
   }
@@ -102,3 +108,4 @@
     margin-bottom: 64px;
   }
 }
+
