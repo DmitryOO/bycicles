@@ -4,6 +4,7 @@
   text-align: center;
   font-family: $font;
   padding-top: 150px;
+  padding-bottom: 125px;
 }
 
 .type h2 {
@@ -20,6 +21,7 @@
   max-width: 1222px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   padding-left: 0;
   list-style: none;
   display: flex;
@@ -132,6 +134,7 @@
 @media (max-width: $tablet-width) {
   .type {
     padding-top: 57px;
+    padding-bottom: 22px;
   }
 
   .type h2 {
@@ -216,6 +219,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .type {
+    padding-bottom: 13px;
+  }
+
   .type__list {
     max-width: 320px;
   }

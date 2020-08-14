@@ -1,0 +1,148 @@
+.page-footer {
+  font-family: $font;
+  width: 100%;
+  padding-top: 125px;
+}
+
+.page-footer h2 {
+  text-align: center;
+  color: #1f1f1f;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -0.005em;
+  margin-left: -10px;
+}
+
+.page-footer p {
+  max-width: 555px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+  padding-right: 14px;
+  opacity: 0.7;
+}
+
+.page-footer__map {
+  text-align: center;
+}
+
+.page-footer__contacts {
+  max-width: 960px;
+  list-style: none;
+  padding-top: 22px;
+  padding-left: 0;
+  padding-bottom: 98px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-footer__contacts-item {
+  margin-right: 49px;
+  padding-left: 75px;
+}
+
+.page-footer__contacts-item a {
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.page-footer__contacts-item a::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.page-footer__contacts-item--mail a::before {
+  width: 26px;
+  height: 20px;
+  background-image: url("../img/icon-mail.svg");
+  top: 3px;
+  left: -44px;
+}
+
+.page-footer__contacts-item--call a::before {
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/icon-phone.svg");
+  top: -2px;
+  left: -36px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer {
+    padding-top: 51px;
+  }
+
+  .page-footer h2 {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .page-footer p {
+    max-width: none;
+    padding-right: 0;
+    margin-bottom: 22px;
+  }
+
+  .page-footer__iframe {
+    width: 698px;
+    height: 545px;
+  }
+
+  .page-footer__contacts {
+    padding-top: 4px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer {
+    padding-top: 0;
+  }
+
+  .page-footer h2 {
+    font-size: 18px;
+    margin-top: 11px;
+  }
+
+  .page-footer p {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+  }
+
+  .page-footer__iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .page-footer__contacts {
+    flex-direction: column;
+    padding-top: 13px;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+
+  .page-footer__contacts-item {
+    margin-bottom: 29px;
+
+    &--call {
+      padding-left: 44px;
+    }
+  }
+}

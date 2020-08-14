@@ -1,0 +1,137 @@
+.video {
+  font-family: $font;
+  width: 100%;
+  min-height: 804px;
+  padding-top: 118px;
+  background-color: #131314;
+  color: #ffffff;
+  border-bottom: 98px solid #ffffff;
+}
+
+.video h2 {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -10px;
+}
+
+.video p {
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  opacity: 0.7;
+}
+
+.video__picture {
+  width: 930px;
+  height: 522px;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: -98px;
+  background-image: url("../img/video_desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/video_desktop_2x.jpg");
+  }
+}
+
+.video__button {
+  width: 65px;
+  height: 65px;
+  background-color: transparent;
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+
+  &:hover,
+  &:focus,
+  &active {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .video {
+    padding-top: 71px;
+    min-height: 498px;
+    border-bottom-width: 85px;
+  }
+
+  .video__picture {
+    width: 503px;
+    height: 282px;
+    background-image: url("../img/video_tablet.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/video_tablet_2x.jpg");
+    }
+  }
+
+  .video h2 {
+    margin-left: 0;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .video p {
+    width: 430px;
+    margin-top: 22px;
+    margin-bottom: -58px;
+  }
+
+  .video__button {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .video {
+    padding-top: 85px;
+    border-bottom-width: 114px;
+  }
+
+  .video__picture {
+    width: 288px;
+    height: 162px;
+    bottom: -133px;
+    background-image: url("../img/video_mobile.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/video_mobile_2x.jpg");
+    }
+  }
+
+  .video h2 {
+    margin-left: -12px;
+  }
+
+  .video p {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -80px;
+  }
+
+  .video__button {
+    width: 65px;
+    height: 65px;
+  }
+}
