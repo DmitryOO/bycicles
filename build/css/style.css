@@ -230,6 +230,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -322,6 +324,7 @@ a {
   opacity: 0.5; }
 
 .buy-form input[type="submit"] {
+  cursor: pointer;
   min-height: 51px;
   padding: 0;
   background-color: #0ad9c6;
@@ -569,7 +572,8 @@ a {
   left: -23px; }
 
 .type__image--child img {
-  left: -214px; }
+  left: -214px;
+  height: 100%; }
 
 @media (max-width: 1168px) {
   .type {
@@ -700,6 +704,7 @@ a {
       background-image: url("../img/video_desktop_2x.jpg"); } }
 
 .video__button {
+  cursor: pointer;
   width: 65px;
   height: 65px;
   background-color: transparent;
@@ -794,7 +799,7 @@ a {
   list-style: none;
   padding-top: 22px;
   padding-left: 0;
-  padding-bottom: 98px;
+  padding-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -808,7 +813,8 @@ a {
 
 .page-footer__contacts-item {
   margin-right: 49px;
-  padding-left: 75px; }
+  padding-left: 75px;
+  margin-bottom: 20px; }
 
 .page-footer__contacts-item a {
   color: rgba(0, 0, 0, 0.5);
@@ -850,7 +856,7 @@ a {
     height: 545px; }
   .page-footer__contacts {
     padding-top: 4px;
-    padding-bottom: 40px; } }
+    padding-bottom: 20px; } }
 
 @media (max-width: 767px) {
   .page-footer {

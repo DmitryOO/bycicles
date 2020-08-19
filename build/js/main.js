@@ -5,6 +5,7 @@
   var logo = document.querySelector('.page-header__logo');
   var menu = document.querySelector('.header-menu');
   var toggle = document.querySelector('.page-header__toggle');
+  var menuItems = document.querySelectorAll('.header-menu__item a');
 
   var activateJS = function () {
     header.classList.remove('page-header--noJS');
@@ -16,12 +17,21 @@
 
   var onOpenMenu = function () {
     menu.style.display = 'block';
+    menu.style.position = 'fixed';
+    menu.style.top = '0';
+    menu.style.left = '0';
+    menu.style.height = '100%';
+    menu.style.zIndex = '1000';
     logo.style.display = 'none';
-    toggle.style.position = 'absolute';
+    toggle.style.position = 'fixed';
     toggle.style.right = '0';
+    toggle.style.zIndex = '1001';
     toggle.classList.add('page-header__toggle--close');
     toggle.addEventListener('click', onCloseMenu);
     toggle.removeEventListener('click', onOpenMenu);
+    menuItems.forEach(function (item) {
+      item.addEventListener('click', onCloseMenu);
+    });
   };
 
   var onCloseMenu = function () {
@@ -31,6 +41,9 @@
     toggle.classList.remove('page-header__toggle--close');
     toggle.addEventListener('click', onOpenMenu);
     toggle.removeEventListener('click', onCloseMenu);
+    menuItems.forEach(function (item) {
+      item.removeEventListener('click', onCloseMenu);
+    });
   };
 
   var onResizeJS = function () {
